@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 
    Copyright 2019 Esri
@@ -17,13 +17,12 @@
    limitations under the License.
 
 -->
-
-<ArcGIS defaultAssembly="CameraNavigation.dll" defaultNamespace="CameraNavigation" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+<ArcGIS defaultAssembly="CameraNavigation.dll" defaultNamespace="CameraNavigation" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Users/swing/AppData/Local/Programs/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
   <AddInInfo id="{ce2d1bec-a155-4e87-8268-164f4d5787c6}" version="1.0" desktopVersion="2.0.0">
     <Name>Navigating camera with ArcGIS Pro</Name>
     <Description>Navigating camera with ArcGIS Pro</Description>
     <Image>Images\AddinDesktop32.png</Image>
-    <Author>ArcGIS Pro SDK Team, arcgisprosdk@esri.com</Author> 
+    <Author>ArcGIS Pro SDK Team, arcgisprosdk@esri.com</Author>
     <Company>esri, http://www.esri.com</Company>
     <Date>11/13/2014</Date>
     <Subject>Map-Exploration</Subject>
@@ -38,12 +37,16 @@
       <groups>
         <group id="CameraNavigation_CameraGroup" caption="CAMERA" keytip="z1">
           <button refID="CameraNavigation_CameraPane_ShowButton" size="large" />
+          <button refID="CameraNavigation_MyButton" size="large" />
         </group>
       </groups>
       <controls>
         <button id="CameraNavigation_CameraPane_ShowButton" caption="Show Camera Properties " className="CameraNavigation.CameraPane_ShowButton" loadOnClick="true" smallImage="Images\GenericButtonPurple16.png" largeImage="Images\GenericButtonPurple32.png" condition="esri_mapping_mapPane" keytip="z2">
           <tooltip heading="Show Camera Properties">
             Show Camera Properties<disabledText /></tooltip>
+        </button>
+        <button id="CameraNavigation_MyButton" caption="MyButton" className="MyButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
         </button>
       </controls>
       <dockPanes>
